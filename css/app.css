@@ -1,4 +1,8 @@
-* {
+.app{
+  background:red;
+}
+
+/* * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -75,4 +79,4 @@ h4 {
   font-size: 18px;
   font-weight: 300;
   margin: 0;
-}
+} */
