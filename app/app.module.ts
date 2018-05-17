@@ -2,6 +2,7 @@
 import { NgModule } from '@angular/core'; 
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 //We need to tell index.html to bootstrap this appComponent
 import { AppComponent } from './app.component'; //imported the component into the module
@@ -17,7 +18,8 @@ import { AppComponent } from './app.component'; //imported the component into th
   ],
   imports: [
     BrowserModule,
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   //create a property to reference AppComponent
   bootstrap: [AppComponent]  

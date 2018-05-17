@@ -5,15 +5,30 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
   template: `
     <div class="app">
-      {{title}}
+    <button (click)="handleClick()">
+      Change me
+    </button>
+      <input 
+        type="text"
+        [ngModel] = "name"
+        (ngModelChange)="handleChange($event)">
+        <input 
+        type="text"
+        [(ngModel)] = "name">
+      <div> {{ name }} </div>
     </div>
   `
 })
 export class AppComponent { // this allows us to import it in the app.module.ts
-  title: string;
+  name: string = "Indra";
 
-  constructor() {
-    this.title = 'Ultimate Angular';
+
+  handleChange(value:any) {
+    this.name = value;
+  }
+
+  handleClick() {
+    this.name = "Back to basics";
   }
 }
  
